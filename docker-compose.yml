@@ -12,7 +12,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=postgres
       - SPRING_DATASOURCE_PASSWORD=root
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
-
+      - spring.jpa.open-in-view=false
   PostgreSQL:
     image: postgres
     ports:
